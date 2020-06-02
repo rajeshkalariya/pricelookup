@@ -7,5 +7,7 @@ import com.modeln.gp.pricelookup.domain.Price;
 
 @Repository
 public interface PriceRepository extends JpaRepository<Price, Long> {
+	
+	
 
 }
