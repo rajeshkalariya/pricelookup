@@ -63,4 +63,70 @@ public class Price {
     @Temporal(TemporalType.TIMESTAMP)
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy")
 	private Date obsoleteDate;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public Product getProduct() {
+		return Product;
+	}
+
+	public void setProduct(Product product) {
+		Product = product;
+	}
+
+	public String getPriceType() {
+		return priceType;
+	}
+
+	public void setPriceType(String priceType) {
+		this.priceType = priceType;
+	}
+
+	public Date getEffectiveStartDate() {
+		return effectiveStartDate;
+	}
+
+	public void setEffectiveStartDate(Date effectiveStartDate) {
+		this.effectiveStartDate = effectiveStartDate;
+	}
+
+	public Date getEffectiveEndDate() {
+		return effectiveEndDate;
+	}
+
+	public void setEffectiveEndDate(Date effectiveEndDate) {
+		this.effectiveEndDate = effectiveEndDate;
+	}
+
+	public Date getProductionDate() {
+		return productionDate;
+	}
+
+	public void setProductionDate(Date productionDate) {
+		this.productionDate = productionDate;
+	}
+
+	public Date getObsoleteDate() {
+		return obsoleteDate;
+	}
+
+	public void setObsoleteDate(Date obsoleteDate) {
+		this.obsoleteDate = obsoleteDate;
+	}
+	
+	
 }
